@@ -1,0 +1,24 @@
+{
+  "crs": "EPSG:4326",
+  "input_files": {
+    "traffic_lights_csv": "data/input/traffic_lights.csv",
+    "roads_gpkg": "data/input/roads.gpkg",
+    "buffers_gpkg": "data/input/buffers.gpkg"
+  },
+  "csv_columns": {
+    "lon": "longitude",
+    "lat": "latitude"
+  },
+  "grouping": {
+    "min_group_size": 50,
+    "max_group_size": 70,
+    "epsilon": 1000,
+    "min_samples": 3
+  },
+  "output_files": {
+    "matched_gpkg": "output/matched_traffic_lights.gpkg",
+    "unmatched_gpkg": "output/output_2_unmatched.gpkg",
+    "groups_dir": "output/groups",
+    "report_txt": "output/report.txt"
+  }
+}
